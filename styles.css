@@ -21,7 +21,7 @@ header {
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 36px;
     font-weight: bold;
     margin: 10px;
     color: white;
@@ -57,7 +57,9 @@ header {
 
 .profile-summary {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     margin: 0;
     padding: 48px 125px;
     background: rgb(230, 230, 230);
@@ -76,6 +78,8 @@ p {
 }
 
 img {
+    max-width: 100%;
+    height: auto;
     border: 1px solid black;
     border-radius: 5px;
 }
@@ -102,4 +106,16 @@ img {
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
+}
+
+@media (max-width: 1000px) {
+    img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 900px) {
+    .profile-summary {
+        flex-direction: column;
+    }
 }
