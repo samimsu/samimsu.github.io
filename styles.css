@@ -118,7 +118,7 @@ img {
 @media (max-width: 900px) {
     .profile-summary {
         flex-direction: column;
-        padding: 0px;
+        padding: 0 0 24px 0;
     }
 }
 
