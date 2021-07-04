@@ -1,9 +1,105 @@
 body {
     padding: 0px;
     margin: 0px;
-    background-color: #005CB4;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto Mono', monospace; */
+}
+
+a {
+    text-decoration: none;
+    padding: none;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    padding: 12px 125px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px;
+    color: white;
+    /* background: yellow; */
+}
+
+.logo:hover {
+    color: black;
+    background: yellow;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0 10px;
+}
+
+.nav-item {
+    color: white;
+    background: rgb(54, 53, 53);
+    padding: 12px 20px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.nav-item:hover {
+    color: black;
+    background: yellow;
+}
+
+.profile-summary {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 48px 125px;
+    background: rgb(230, 230, 230);
+}
+
+.profile-description {
+    padding: 24px;
 }
 
 h1 {
-    color: white;
+    font-size: 48px;
+}
+
+p {
+    font-size: 32px;
+}
+
+img {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: skyblue;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    width: 120px;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+    margin-top: 10px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
