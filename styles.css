@@ -117,5 +117,18 @@ img {
 @media (max-width: 900px) {
     .profile-summary {
         flex-direction: column;
+        padding: 0px;
+    }
+}
+
+@media (max-width: 700px) {
+    .nav {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 520px) {
+    header {
+        flex-direction: column;
     }
 }
