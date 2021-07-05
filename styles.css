@@ -217,8 +217,10 @@ p {
 }
 
 @media (max-width: 400px) {
-    .nav {
-        flex-direction: column;
+    .nav-item {
+        margin: 2px;
+        font-size: 14px;
+        padding: 10px 15px;
     }
 }
 
@@ -235,5 +237,11 @@ p {
 @media (max-width: 300px) {
     h1 {
         font-size: 30px;
+    }
+}
+
+@media (max-width: 270px) {
+    .nav {
+        flex-direction: column;
     }
 }
