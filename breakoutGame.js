@@ -1,9 +1,11 @@
 const canvas = document.getElementById("myCanvas");
 const ctx = canvas.getContext("2d");
 let infoMsg = "click to start";
-const paddleHeight = 10;
-const paddleWidth = 75;
-const ballRadius = 10;
+const originalCanvasWidth = 480;
+const originalCanvasHeight = 320;
+const paddleHeight = (canvas.height / originalCanvasHeight) * 10;
+const paddleWidth = (canvas.width / originalCanvasWidth) * 75;
+const ballRadius = (canvas.height / originalCanvasHeight) * 10;
 let x = canvas.width / 2;
 let y = canvas.height - paddleHeight - ballRadius;
 let dx = 2;
