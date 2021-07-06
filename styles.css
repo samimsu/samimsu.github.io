@@ -171,6 +171,14 @@ p {
     top: -10px;
 }
 
+.footer {
+    color: white;
+    background: black;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    padding: 25px;
+}
+
 @media (max-width: 1150px) {
     img {
         width: 350px;
