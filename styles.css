@@ -211,6 +211,20 @@ p {
     padding: 25px;
 }
 
+/* breakout-game.html */
+
+.game {
+    display: flex;
+    justify-content: center;
+    margin: 48px;
+}
+
+canvas {
+    background: #eee;
+    display: block;
+    max-width: 100%;
+}
+
 /* media queries */
 
 @media (max-width: 1150px) {
@@ -299,4 +313,12 @@ p {
     .nav {
         flex-direction: column;
     }
+}
+
+/* breakout-game.html */
+
+@media (max-width: 500px) {
+    /* canvas {
+        width: 99%;
+    } */
 }

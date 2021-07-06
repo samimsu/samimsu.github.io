@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sami's Portfolio</title>
+    <link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16" />
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/700223767b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html" class="logo">Sami</a>
+
+      <div class="icons">
+        <a href="https://github.com/samimsu">
+          <i class="fab fa-github fa-3x icon"></i>
+        </a>
+
+        <a href="https://linkedin.com/in/samimsu">
+          <i class="fab fa-linkedin fa-3x icon"></i>
+        </a>
+      </div>
+
+      <nav class="nav">
+        <a href="#" class="nav-item tooltip">
+          About
+          <span class="tooltiptext">Coming soon!</span>
+        </a>
+        <a href="index.html#portfolio" class="nav-item tooltip">Portfolio</a>
+        <a href="#contact" class="nav-item tooltip">Contact</a>
+      </nav>
+    </header>
+
+    <div class="game">
+      <canvas id="myCanvas" width="480" height="320"></canvas>
+      <script src="breakoutGame.js"></script>
+    </div>
+  </body>
+</html>
