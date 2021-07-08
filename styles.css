@@ -225,6 +225,10 @@ canvas {
     max-width: 100%;
 }
 
+.game-info {
+    text-align: center;
+}
+
 /* media queries */
 
 @media (max-width: 1150px) {
@@ -293,13 +297,16 @@ canvas {
     }
 }
 
-@media (max-width: 325px) {
-    h1 {
-        font-size: 32px;
-    }
+@media (max-width: 350px) {
     img {
         width: 200px;
         height: 200px;
+    }
+}
+
+@media (max-width: 325px) {
+    h1 {
+        font-size: 32px;
     }
 }
 
