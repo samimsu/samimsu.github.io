@@ -210,6 +210,7 @@ header {
 .about-info p {
     font-size: 24px;
     font-family: 'Open Sans', sans-serif;
+    padding: 24px;
 }
 
 /* contact */
@@ -328,6 +329,9 @@ canvas {
         flex-direction: column;
     }
     .portfolio {
+        padding: 0 0 24px 0;
+    }
+    .about {
         padding: 0 0 24px 0;
     }
     .contact {
