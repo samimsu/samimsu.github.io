@@ -258,6 +258,26 @@ header {
     padding: 25px;
 }
 
+#scrollBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgb(255, 150, 0);
+    color: white;
+    cursor: pointer;
+    padding: 25px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+#scrollBtn:hover {
+    background-color: rgb(255, 125, 0);
+}
+
 /* tooltip */
 
 .tooltip {
