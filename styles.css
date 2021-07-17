@@ -160,6 +160,7 @@ header {
 
 .code-btn:hover {
     color: white;
+    border-color: black;
 }
 
 .demo-btn {
