@@ -341,13 +341,7 @@ canvas {
     .project {
         flex-direction: column;
     }
-    .portfolio {
-        padding: 0 0 24px 0;
-    }
-    .about {
-        padding: 0 0 24px 0;
-    }
-    .contact {
+    .section {
         padding: 0 0 24px 0;
     }
 }
