@@ -1,4 +1,5 @@
 const scrollButton = document.getElementById("scrollBtn");
+const scrollTop = 590;
 
 window.onscroll = () => {
   scroll();
@@ -6,8 +7,8 @@ window.onscroll = () => {
 
 function scroll() {
   if (
-    document.body.scrollTop > 1000 ||
-    document.documentElement.scrollTop > 1000
+    document.body.scrollTop > scrollTop ||
+    document.documentElement.scrollTop > scrollTop
   ) {
     scrollButton.style.display = "block";
   } else {

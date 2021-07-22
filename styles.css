@@ -104,14 +104,14 @@ header {
     border-radius: 5px;
 }
 
-/* portfolio */
-
-.portfolio {
+.section {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 48px 125px;
 }
+
+/* portfolio */
 
 .portfolio-description {
     padding: 24px;
@@ -201,13 +201,6 @@ header {
 
 /* about */
 
-.about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 48px 125px;
-}
-
 .about-info p {
     font-size: 24px;
     font-family: 'Open Sans', sans-serif;
@@ -216,11 +209,8 @@ header {
 
 /* contact */
 
-.contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 48px 125px;
+.contact-info {
+    padding: 24px;
 }
 
 .contact-item {
@@ -258,6 +248,8 @@ header {
     padding: 25px;
 }
 
+/* scroll button */
+
 #scrollBtn {
     display: none;
     position: fixed;
@@ -271,7 +263,7 @@ header {
     cursor: pointer;
     padding: 25px;
     border-radius: 50%;
-    font-size: 18px;
+    font-size: 10px;
 }
 
 #scrollBtn:hover {
