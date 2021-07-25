@@ -1,3 +1,8 @@
+$orange-main: #ff9600;
+$orange-dark: #ff7d00;
+$grey-main: #353535;
+$grey-light: #e6e6e6;
+
 html {
   scroll-behavior: smooth;
 }
@@ -23,6 +28,7 @@ p {
 }
 
 /* header and nav */
+
 header {
   display: flex;
   flex-direction: row;
@@ -41,7 +47,7 @@ header {
 
 .logo:hover {
   color: black;
-  background: #ff9600;
+  background: $orange-main;
 }
 
 .icons {
@@ -50,11 +56,11 @@ header {
 
 .icon {
   margin: 10px;
-  color: #353535;
+  color: $grey-main;
 }
 
 .icon:hover {
-  color: #ff9600;
+  color: $orange-main;
 }
 
 .nav {
@@ -66,7 +72,7 @@ header {
 
 .nav-item {
   color: white;
-  background: #353535;
+  background: $grey-main;
   padding: 12px 20px;
   margin: 10px;
   font-size: 18px;
@@ -77,10 +83,11 @@ header {
 
 .nav-item:hover {
   color: black;
-  background: #ff9600;
+  background: $orange-main;
 }
 
 /* profile */
+
 .profile-summary {
   display: flex;
   flex-direction: row;
@@ -88,7 +95,7 @@ header {
   align-items: center;
   margin: 0;
   padding: 48px 125px;
-  background: #e6e6e6;
+  background: $grey-light;
 }
 
 .profile-description {
@@ -110,6 +117,7 @@ header {
 }
 
 /* portfolio */
+
 .portfolio-description {
   padding: 24px;
 }
@@ -166,10 +174,10 @@ header {
 
 .demo-btn {
   color: black;
-  background-color: #ff9600;
+  background-color: $orange-main;
   font-family: "Open Sans", sans-serif;
   font-size: 21px;
-  border: 1px solid #ff9600;
+  border: 1px solid $orange-main;
   border-radius: 3px;
   padding: 6px 15px;
   margin: 0 10px;
@@ -184,8 +192,8 @@ header {
 }
 
 .demo-btn:hover {
-  background-color: #ff7d00;
-  border-color: #ff7d00;
+  background-color: $orange-dark;
+  border-color: $orange-dark;
 }
 
 .project-image {
@@ -199,6 +207,7 @@ header {
 }
 
 /* about */
+
 .about-info p {
   font-size: 24px;
   font-family: "Open Sans", sans-serif;
@@ -206,6 +215,7 @@ header {
 }
 
 /* contact */
+
 .contact-info {
   padding: 24px;
 }
@@ -217,11 +227,11 @@ header {
 }
 
 .contact-item:hover > .contact-icon i {
-  color: #ff9600;
+  color: $orange-main;
 }
 
 .contact-item i {
-  color: #353535;
+  color: $grey-main;
 }
 
 .contact-icon {
@@ -236,6 +246,7 @@ header {
 }
 
 /* footer */
+
 .footer {
   color: white;
   background: black;
@@ -245,6 +256,7 @@ header {
 }
 
 /* scroll button */
+
 #scrollBtn {
   display: none;
   position: fixed;
@@ -253,7 +265,7 @@ header {
   z-index: 99;
   border: none;
   outline: none;
-  background-color: #ff9600;
+  background-color: $orange-main;
   color: white;
   cursor: pointer;
   padding: 25px;
@@ -262,10 +274,11 @@ header {
 }
 
 #scrollBtn:hover {
-  background-color: #ff7d00;
+  background-color: $orange-dark;
 }
 
 /* tooltip */
+
 .tooltip {
   position: relative;
   display: inline-block;
@@ -291,6 +304,7 @@ header {
 }
 
 /* breakout-game.html */
+
 .game {
   display: flex;
   justify-content: center;
@@ -308,63 +322,62 @@ canvas {
 }
 
 /* media queries */
+
 @media (max-width: 1150px) {
   img {
     width: 350px;
     height: 350px;
   }
 }
+
 @media (max-width: 1075px) {
   img {
     width: 300px;
     height: 300px;
   }
-
   .profile-summary {
     padding: 0 64px;
   }
 }
+
 @media (max-width: 900px) {
   .profile-summary {
     flex-direction: column;
     padding: 0 0 24px 0;
   }
-
   .project-group {
     flex-direction: column;
   }
-
   .section {
     padding: 0 0 24px 0;
   }
 }
+
 @media (max-width: 875px) {
   header {
     flex-direction: column;
   }
 }
+
 @media (max-width: 415px) {
   h1 {
     font-size: 36px;
   }
-
   p {
     font-size: 24px;
   }
-
   .contact-item {
     margin: 2px;
   }
-
   .contact-icon {
     width: 24px;
     font-size: 8px;
   }
-
   .contact-description {
     font-size: 12px;
   }
 }
+
 @media (max-width: 400px) {
   .nav-item {
     margin: 2px;
@@ -372,26 +385,28 @@ canvas {
     padding: 10px 15px;
   }
 }
+
 @media (max-width: 350px) {
   img {
     width: 200px;
     height: 200px;
   }
 }
+
 @media (max-width: 325px) {
   h1 {
     font-size: 32px;
   }
 }
+
 @media (max-width: 300px) {
   h1 {
     font-size: 30px;
   }
 }
+
 @media (max-width: 270px) {
   .nav {
     flex-direction: column;
   }
 }
-
-/*# sourceMappingURL=styles.css.map */
