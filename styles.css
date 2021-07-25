@@ -117,9 +117,15 @@ header {
     padding: 24px;
 }
 
-.project {
+.project-group {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
+}
+
+.project {
+    display: flex;
+    flex-direction: column-reverse;
     align-items: center;
     padding: 10px;
 }
@@ -179,25 +185,30 @@ header {
     visibility: hidden;
 }
 
+#s-bot .demo-btn {
+    visibility: hidden;
+}
+
 .demo-btn:hover {
     background-color: rgb(255, 125, 0);
     border-color: rgb(255, 125, 0);
 }
 
 .project-image {
-    max-width: 522px;
+    width: 522px;
     height: auto;
     margin: 15px;
     border-radius: 10px;
     box-shadow: 0 15px 15px 5px lightgrey;
     position: relative;
     top: 0;
-    transition: top ease 0.3s;
+    /* transition: top ease 0.3s; */
+    /* transition: transform .2s; */
 }
 
-.project-image:hover {
-    top: -10px;
-}
+/* .project-image:hover {
+    transform: scale(1.5);
+} */
 
 /* about */
 
@@ -338,7 +349,7 @@ canvas {
         flex-direction: column;
         padding: 0 0 24px 0;
     }
-    .project {
+    .project-group {
         flex-direction: column;
     }
     .section {
