@@ -145,7 +145,6 @@ header {
 }
 
 .project-btns {
-    /* background-color: red; */
     display: flex;
     justify-content: flex-start;
 }
@@ -155,7 +154,6 @@ header {
     background-color: white;
     font-size: 24px;
     border: 1px solid;
-    /* border-radius: 3px; */
     padding: 5px 15px;
     margin-right: 10px;
 }
@@ -170,7 +168,6 @@ header {
 }
 
 .demo-btn {
-    /* visibility: hidden; */
     color: black;
     background-color: rgb(255, 150, 0);
     font-family: 'Open Sans', sans-serif;
@@ -202,13 +199,7 @@ header {
     box-shadow: 0 15px 15px 5px lightgrey;
     position: relative;
     top: 0;
-    /* transition: top ease 0.3s; */
-    /* transition: transform .2s; */
 }
-
-/* .project-image:hover {
-    transform: scale(1.5);
-} */
 
 /* about */
 
@@ -413,12 +404,4 @@ canvas {
     .nav {
         flex-direction: column;
     }
-}
-
-/* breakout-game.html */
-
-@media (max-width: 500px) {
-    /* canvas {
-        width: 99%;
-    } */
 }
