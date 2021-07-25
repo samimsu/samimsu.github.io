@@ -1,5 +1,5 @@
 const scrollButton = document.getElementById("scrollBtn");
-const scrollTop = 590;
+const scrollTop = 585;
 
 window.onscroll = () => {
   scroll();
