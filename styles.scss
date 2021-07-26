@@ -19,7 +19,8 @@ a {
   padding: none;
 }
 
-h1 {
+h1,
+h2 {
   font-size: 48px;
 }
 
@@ -140,6 +141,7 @@ header {
 }
 
 .project-title {
+  font-size: 24px;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
 }
@@ -364,7 +366,8 @@ canvas {
 }
 
 @media (max-width: 415px) {
-  h1 {
+  h1,
+  h2 {
     font-size: 36px;
   }
   p {
@@ -400,13 +403,15 @@ canvas {
 }
 
 @media (max-width: 325px) {
-  h1 {
+  h1,
+  h2 {
     font-size: 32px;
   }
 }
 
 @media (max-width: 300px) {
-  h1 {
+  h1,
+  h2 {
     font-size: 30px;
   }
 }
