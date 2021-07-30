@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^samimsu.github.io$
+RewriteRule ^(.*)$ https://samimsu.github.io/$1 [R=301,L]
