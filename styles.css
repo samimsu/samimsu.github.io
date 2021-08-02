@@ -81,7 +81,7 @@ header {
 }
 
 /* profile */
-.profile-summary {
+.profile {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -323,12 +323,12 @@ canvas {
     width: 300px;
   }
 
-  .profile-summary {
+  .profile {
     padding: 0 64px;
   }
 }
 @media (max-width: 900px) {
-  .profile-summary {
+  .profile {
     flex-direction: column;
     padding: 0 0 24px 0;
   }
