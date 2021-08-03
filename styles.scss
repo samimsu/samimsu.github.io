@@ -34,7 +34,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background: black;
+  background-color: black;
   padding: 12px 125px;
 }
 
@@ -47,7 +47,7 @@ header {
 
 .logo:hover {
   color: black;
-  background: $orange-main;
+  background-color: $orange-main;
 }
 
 .icons {
@@ -72,7 +72,7 @@ header {
 
 .nav-item {
   color: white;
-  background: $grey-main;
+  background-color: $grey-main;
   padding: 12px 20px;
   margin: 10px;
   font-size: 18px;
@@ -83,7 +83,7 @@ header {
 
 .nav-item:hover {
   color: black;
-  background: $orange-main;
+  background-color: $orange-main;
 }
 
 /* profile */
@@ -95,7 +95,7 @@ header {
   align-items: center;
   margin: 0;
   padding: 48px 125px;
-  background: $grey-light;
+  background-color: $grey-light;
 }
 
 .profile-description {
@@ -246,7 +246,7 @@ header {
 
 .footer {
   color: white;
-  background: black;
+  background-color: black;
   font-family: "Open Sans", sans-serif;
   text-align: center;
   padding: 25px;
@@ -309,7 +309,7 @@ header {
 }
 
 canvas {
-  background: #eee;
+  background-color: #eee;
   display: block;
   max-width: 100%;
 }
