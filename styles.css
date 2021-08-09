@@ -5,6 +5,7 @@ html {
 body {
   padding: 0;
   margin: 0;
+  color: #222;
   background-color: white;
   font-family: "Roboto", sans-serif;
 }
@@ -28,7 +29,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
+  background-color: #222;
   padding: 12px 125px;
 }
 
@@ -40,7 +41,7 @@ header {
 }
 
 .logo:hover {
-  color: black;
+  color: #222;
   background-color: #ff9600;
 }
 
@@ -76,7 +77,7 @@ header {
 }
 
 .nav-item:hover {
-  color: black;
+  color: #222;
   background-color: #ff9600;
 }
 
@@ -98,7 +99,7 @@ header {
 .profile-image {
   max-width: 100%;
   height: auto;
-  border: 1px solid black;
+  border: 1px solid #222;
   border-radius: 5px;
 }
 
@@ -148,21 +149,21 @@ header {
 }
 
 .code-btn {
-  color: black;
+  color: #222;
   background-color: white;
   font-size: 24px;
-  border: 1px solid black;
+  border: 1px solid #222;
   padding: 5px 15px;
   margin-right: 10px;
 }
 
 .code-btn:hover {
   color: white;
-  background-color: black;
+  background-color: #222;
 }
 
 .demo-btn {
-  color: black;
+  color: #222;
   background-color: #ff9600;
   font-family: "Open Sans", sans-serif;
   font-size: 21px;
@@ -234,7 +235,7 @@ header {
 /* footer */
 .footer {
   color: white;
-  background-color: black;
+  background-color: #222;
   font-family: "Open Sans", sans-serif;
   text-align: center;
   padding: 25px;
