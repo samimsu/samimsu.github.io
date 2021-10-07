@@ -51,11 +51,11 @@ header {
 
 .icon {
   margin: 10px;
-  color: #353535;
+  color: #ff9600;
 }
 
 .icon:hover {
-  color: #ff9600;
+  color: #ff7d00;
 }
 
 .nav {

@@ -1,3 +1,5 @@
+// sass --watch styles.scss styles.css
+
 $orange-main: #ff9600;
 $orange-dark: #ff7d00;
 $grey-main: #353535;
@@ -58,11 +60,11 @@ header {
 
 .icon {
   margin: 10px;
-  color: $grey-main;
+  color: $orange-main;
 }
 
 .icon:hover {
-  color: $orange-main;
+  color: $orange-dark;
 }
 
 .nav {
