@@ -1,10 +1,10 @@
 // sass --watch styles.scss styles.css
 
-$orange-main: #ff9600;
-$orange-dark: #ff7d00;
-$grey-main: #353535;
-$grey-light: #e6e6e6;
-$grey-dark: #222;
+$primary-color: #383f51;
+$secondary-color: #d1beb0;
+$tertiary-color: #3c4f76;
+$hover-color: #ab9f9d;
+$profile-bg-color: #c6ddf0;
 
 html {
   scroll-behavior: smooth;
@@ -13,8 +13,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  color: $grey-dark;
-  background-color: white;
+  color: $primary-color;
   font-family: "Roboto", sans-serif;
 }
 
@@ -38,7 +37,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: $grey-dark;
+  background-color: $primary-color;
   padding: 12px 125px;
 }
 
@@ -50,8 +49,8 @@ header {
 }
 
 .logo:hover {
-  color: $grey-dark;
-  background-color: $orange-main;
+  color: $primary-color;
+  background-color: $secondary-color;
 }
 
 .icons {
@@ -60,11 +59,11 @@ header {
 
 .icon {
   margin: 10px;
-  color: $orange-main;
+  color: $secondary-color;
 }
 
 .icon:hover {
-  color: $orange-dark;
+  color: $hover-color;
 }
 
 .nav {
@@ -76,7 +75,7 @@ header {
 
 .nav-item {
   color: white;
-  background-color: $grey-main;
+  background-color: $tertiary-color;
   padding: 12px 20px;
   margin: 10px;
   font-size: 18px;
@@ -86,8 +85,8 @@ header {
 }
 
 .nav-item:hover {
-  color: $grey-dark;
-  background-color: $orange-main;
+  color: $primary-color;
+  background-color: $secondary-color;
 }
 
 /* profile */
@@ -99,7 +98,7 @@ header {
   align-items: center;
   margin: 0;
   padding: 48px 125px;
-  background-color: $grey-light;
+  background-color: $profile-bg-color;
 }
 
 .profile-description {
@@ -109,7 +108,7 @@ header {
 .profile-image {
   max-width: 100%;
   height: auto;
-  border: 1px solid $grey-dark;
+  border: 1px solid $primary-color;
   border-radius: 5px;
 }
 
@@ -160,33 +159,33 @@ header {
 }
 
 .code-btn {
-  color: $grey-dark;
+  color: $primary-color;
   background-color: white;
   font-size: 24px;
-  border: 1px solid $grey-dark;
+  border: 1px solid $primary-color;
   padding: 5px 15px;
   margin-right: 10px;
 }
 
 .code-btn:hover {
   color: white;
-  background-color: $grey-dark;
+  background-color: $primary-color;
 }
 
 .demo-btn {
-  color: $grey-dark;
-  background-color: $orange-main;
+  color: $primary-color;
+  background-color: $secondary-color;
   font-family: "Open Sans", sans-serif;
   font-size: 21px;
-  border: 1px solid $orange-main;
+  border: 1px solid $secondary-color;
   border-radius: 3px;
   padding: 6px 15px;
   margin: 0 10px;
 }
 
 .demo-btn:hover {
-  background-color: $orange-dark;
-  border-color: $orange-dark;
+  background-color: $hover-color;
+  border-color: $hover-color;
 }
 
 #kanban-boards .demo-btn {
@@ -227,11 +226,11 @@ header {
 }
 
 .contact-item:hover > .contact-icon i {
-  color: $orange-main;
+  color: $secondary-color;
 }
 
 .contact-item i {
-  color: $grey-main;
+  color: $tertiary-color;
 }
 
 .contact-icon {
@@ -249,7 +248,7 @@ header {
 
 .footer {
   color: white;
-  background-color: $grey-dark;
+  background-color: $primary-color;
   font-family: "Open Sans", sans-serif;
   text-align: center;
   padding: 25px;
@@ -265,7 +264,7 @@ header {
   z-index: 99;
   border: none;
   outline: none;
-  background-color: $orange-main;
+  background-color: $secondary-color;
   color: white;
   cursor: pointer;
   padding: 25px;
@@ -274,7 +273,7 @@ header {
 }
 
 #scrollBtn:hover {
-  background-color: $orange-dark;
+  background-color: $hover-color;
 }
 
 /* tooltip */
