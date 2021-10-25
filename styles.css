@@ -335,6 +335,10 @@ canvas {
   }
 }
 @media (max-width: 900px) {
+  .header-profile {
+    height: auto;
+  }
+
   .profile {
     flex-direction: column;
     padding: 0 0 24px 0;
