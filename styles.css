@@ -103,6 +103,12 @@ header {
   padding: 24px;
 }
 
+.letswork-link,
+.letswork-link:visited,
+.letswork-link:active {
+  color: blue;
+}
+
 .profile-image {
   max-width: 100%;
   height: auto;
