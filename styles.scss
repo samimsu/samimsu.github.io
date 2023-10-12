@@ -1,9 +1,9 @@
 // sass --watch styles.scss styles.css
 
-$primary-color: #383f51;
-$secondary-color: #d1beb0;
-$tertiary-color: #3c4f76;
-$hover-color: #ab9f9d;
+$primary-color: #010101;
+$secondary-color: #6b6f78;
+$tertiary-color: #6b6f78;
+$hover-color: #505257;
 $profile-bg-color: #c6ddf0;
 
 html {
@@ -187,7 +187,7 @@ header {
 }
 
 .demo-btn {
-  color: $primary-color;
+  color: white;
   background-color: $secondary-color;
   font-family: "Open Sans", sans-serif;
   font-size: 21px;

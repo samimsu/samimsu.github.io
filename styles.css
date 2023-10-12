@@ -5,7 +5,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  color: #383f51;
+  color: #010101;
   font-family: "Roboto", sans-serif;
 }
 
@@ -35,7 +35,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #383f51;
+  background-color: #010101;
   padding: 12px 125px;
 }
 
@@ -47,8 +47,8 @@ header {
 }
 
 .logo:hover {
-  color: #383f51;
-  background-color: #d1beb0;
+  color: #010101;
+  background-color: #6b6f78;
 }
 
 .icons {
@@ -57,11 +57,11 @@ header {
 
 .icon {
   margin: 10px;
-  color: #d1beb0;
+  color: #6b6f78;
 }
 
 .icon:hover {
-  color: #ab9f9d;
+  color: #505257;
 }
 
 .nav {
@@ -73,7 +73,7 @@ header {
 
 .nav-item {
   color: white;
-  background-color: #3c4f76;
+  background-color: #6b6f78;
   padding: 12px 20px;
   margin: 10px;
   font-size: 18px;
@@ -83,8 +83,8 @@ header {
 }
 
 .nav-item:hover {
-  color: #383f51;
-  background-color: #d1beb0;
+  color: #010101;
+  background-color: #6b6f78;
 }
 
 /* profile */
@@ -112,7 +112,7 @@ header {
 .profile-image {
   max-width: 100%;
   height: auto;
-  border: 1px solid #383f51;
+  border: 1px solid #010101;
   border-radius: 5px;
 }
 
@@ -162,33 +162,33 @@ header {
 }
 
 .code-btn {
-  color: #383f51;
+  color: #010101;
   background-color: white;
   font-size: 24px;
-  border: 1px solid #383f51;
+  border: 1px solid #010101;
   padding: 5px 15px;
   margin-right: 10px;
 }
 
 .code-btn:hover {
   color: white;
-  background-color: #383f51;
+  background-color: #010101;
 }
 
 .demo-btn {
-  color: #383f51;
-  background-color: #d1beb0;
+  color: white;
+  background-color: #6b6f78;
   font-family: "Open Sans", sans-serif;
   font-size: 21px;
-  border: 1px solid #d1beb0;
+  border: 1px solid #6b6f78;
   border-radius: 3px;
   padding: 6px 15px;
   margin: 0 10px;
 }
 
 .demo-btn:hover {
-  background-color: #ab9f9d;
-  border-color: #ab9f9d;
+  background-color: #505257;
+  border-color: #505257;
 }
 
 #kanban-boards .demo-btn {
@@ -227,11 +227,11 @@ header {
 }
 
 .contact-item:hover > .contact-icon i {
-  color: #d1beb0;
+  color: #6b6f78;
 }
 
 .contact-item i {
-  color: #3c4f76;
+  color: #6b6f78;
 }
 
 .contact-icon {
@@ -248,7 +248,7 @@ header {
 /* footer */
 .footer {
   color: white;
-  background-color: #383f51;
+  background-color: #010101;
   font-family: "Open Sans", sans-serif;
   text-align: center;
   padding: 25px;
@@ -263,7 +263,7 @@ header {
   z-index: 99;
   border: none;
   outline: none;
-  background-color: #d1beb0;
+  background-color: #6b6f78;
   color: white;
   cursor: pointer;
   padding: 25px;
@@ -272,7 +272,7 @@ header {
 }
 
 #scrollBtn:hover {
-  background-color: #ab9f9d;
+  background-color: #505257;
 }
 
 /* tooltip */
@@ -322,7 +322,6 @@ canvas {
   img {
     width: 350px;
   }
-
   .project-image {
     width: 350px;
   }
@@ -331,11 +330,9 @@ canvas {
   img {
     width: 300px;
   }
-
   .project-image {
     width: 300px;
   }
-
   .profile {
     padding: 0 64px;
   }
@@ -344,16 +341,13 @@ canvas {
   .header-profile {
     height: auto;
   }
-
   .profile {
     flex-direction: column;
     padding: 0 0 24px 0;
   }
-
   .project-group {
     flex-direction: column;
   }
-
   .section {
     padding: 0 0 24px 0;
   }
@@ -365,23 +359,19 @@ canvas {
 }
 @media (max-width: 415px) {
   h1,
-h2 {
+  h2 {
     font-size: 36px;
   }
-
   p {
     font-size: 24px;
   }
-
   .contact-item {
     margin: 2px;
   }
-
   .contact-icon {
     width: 24px;
     font-size: 8px;
   }
-
   .contact-description {
     font-size: 12px;
   }
@@ -397,20 +387,19 @@ h2 {
   img {
     width: 200px;
   }
-
   .project-image {
     width: 200px;
   }
 }
 @media (max-width: 325px) {
   h1,
-h2 {
+  h2 {
     font-size: 32px;
   }
 }
 @media (max-width: 300px) {
   h1,
-h2 {
+  h2 {
     font-size: 30px;
   }
 }
