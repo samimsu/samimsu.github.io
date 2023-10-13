@@ -90,13 +90,19 @@
   <body>
     <div class="header-profile">
       <header>
-        <a href="/" class="logo">Sami</a>
+        <a href="/" class="logo">
+          <img
+            src="images/favicon/android-chrome-192x192.png"
+            width="36"
+            alt="logo"
+          />
+        </a>
         <div class="icons">
           <a href="https://github.com/samimsu">
-            <i class="fab fa-github fa-3x icon"></i>
+            <i class="fab fa-github fa-2x icon"></i>
           </a>
           <a href="https://linkedin.com/in/samimsu">
-            <i class="fab fa-linkedin fa-3x icon"></i>
+            <i class="fab fa-linkedin fa-2x icon"></i>
           </a>
         </div>
         <nav class="nav">
@@ -110,8 +116,7 @@
         <div class="profile-description">
           <h1>Hey, I'm Sami! 👋</h1>
           <p>
-            I'm a Web Developer based in the UAE and and my most recent job was
-            at
+            I'm a Web Developer based in the UAE and my most recent job was at
             <a
               class="letswork-link"
               href="https://www.letswork.io/"
@@ -153,13 +158,10 @@
             <img
               class="project-image"
               src="images/simplechat.png"
-              width="522"
               alt="SimpleChat"
             />
           </a>
         </div>
-      </div>
-      <div class="project-group">
         <div id="kanban-boards" class="project">
           <div class="project-info">
             <h3 class="project-title">Kanban Boards</h3>
@@ -188,7 +190,63 @@
             />
           </a>
         </div>
-
+        <div id="s-bot" class="project">
+          <div class="project-info">
+            <h3 class="project-title">SBot</h3>
+            <p class="project-description">
+              A multipurpose chatbot for Discord to make instant messaging a
+              little more fun. Different commands are provided by the user and
+              the bot responds accordingly.
+            </p>
+            <p class="project-description">Tools: Discord.py, Python</p>
+            <div class="project-btns">
+              <a
+                class="code-btn"
+                href="https://github.com/samimsu/SBot-Discord/"
+                ><code>&#60;code&#62;</code></a
+              >
+              <a class="demo-btn" href="#">Demo</a>
+            </div>
+          </div>
+          <a href="images/sbot-youtube.webp" target="new">
+            <img
+              class="project-image"
+              src="images/sbot-youtube.webp"
+              width="522"
+              alt="SBot"
+            />
+          </a>
+        </div>
+        <div id="breakout-game" class="project">
+          <div class="project-info">
+            <h3 class="project-title">2D Breakout</h3>
+            <p class="project-description">
+              A web version of the famous breakout game. It was created using
+              vanilla javascript (no libraries). The objective is to destroy all
+              the bricks. It can be played on a PC using the mouse/keyboard or
+              on a mobile in landscape mode.
+            </p>
+            <p class="project-description">Tools: Javascript</p>
+            <div class="project-btns">
+              <a
+                class="code-btn"
+                href="https://github.com/samimsu/breakout-game"
+                ><code>&#60;code&#62;</code></a
+              >
+              <a class="demo-btn" href="https://samimsu.github.io/breakout-game"
+                >Demo</a
+              >
+            </div>
+          </div>
+          <a href="images/breakout-game-big.png" target="new">
+            <img
+              class="project-image"
+              src="images/breakout-game.webp"
+              width="522"
+              alt="Breakout game"
+            />
+          </a>
+        </div>
         <div id="sliding-puzzle-game" class="project">
           <div class="project-info">
             <h3 class="project-title">Slidey</h3>
@@ -221,70 +279,9 @@
           </a>
         </div>
       </div>
-
-      <div class="project-group">
-        <div id="s-bot" class="project">
-          <div class="project-info">
-            <h3 class="project-title">SBot</h3>
-            <p class="project-description">
-              A multipurpose chatbot for Discord to make instant messaging a
-              little more fun. Different commands are provided by the user and
-              the bot responds accordingly.
-            </p>
-            <p class="project-description">Tools: Discord.py, Python</p>
-            <div class="project-btns">
-              <a
-                class="code-btn"
-                href="https://github.com/samimsu/SBot-Discord/"
-                ><code>&#60;code&#62;</code></a
-              >
-              <a class="demo-btn" href="#">Demo</a>
-            </div>
-          </div>
-          <a href="images/sbot-youtube.webp" target="new">
-            <img
-              class="project-image"
-              src="images/sbot-youtube.webp"
-              width="522"
-              alt="SBot"
-            />
-          </a>
-        </div>
-
-        <div id="breakout-game" class="project">
-          <div class="project-info">
-            <h3 class="project-title">2D Breakout</h3>
-            <p class="project-description">
-              A web version of the famous breakout game. It was created using
-              vanilla javascript (no libraries). The objective is to destroy all
-              the bricks. It can be played on a PC using the mouse/keyboard or
-              on a mobile in landscape mode.
-            </p>
-            <p class="project-description">Tools: Javascript</p>
-            <div class="project-btns">
-              <a
-                class="code-btn"
-                href="https://github.com/samimsu/breakout-game"
-                ><code>&#60;code&#62;</code></a
-              >
-              <a class="demo-btn" href="https://samimsu.github.io/breakout-game"
-                >Demo</a
-              >
-            </div>
-          </div>
-          <a href="images/breakout-game-big.png" target="new">
-            <img
-              class="project-image"
-              src="images/breakout-game.webp"
-              width="522"
-              alt="Breakout game"
-            />
-          </a>
-        </div>
-      </div>
     </div>
 
-    <hr />
+    <div class="h-rule"></div>
 
     <div id="about" class="section">
       <h2>About</h2>
@@ -322,7 +319,7 @@
       </div>
     </div>
 
-    <hr />
+    <div class="h-rule"></div>
 
     <div id="contact" class="section">
       <h2>Contact</h2>
