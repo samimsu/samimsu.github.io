@@ -21,9 +21,13 @@ a {
   text-decoration: none;
 }
 
-h1,
+h1 {
+  font-size: 48px;
+}
+
 h2 {
   font-size: 48px;
+  margin: 0;
 }
 
 p {
@@ -51,6 +55,7 @@ header {
 .logo {
   display: flex;
   align-items: center;
+  padding: 10px 0px;
 }
 
 .logo:hover {
@@ -130,7 +135,8 @@ header {
 /* portfolio */
 
 .portfolio-description {
-  padding: 24px;
+  padding: 12px 24px 24px 24px;
+  margin-top: 0;
 }
 
 .project-group {
@@ -138,17 +144,12 @@ header {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: flex-start;
   gap: 30px;
+  padding: 0px 24px;
 }
 
 .project {
   display: flex;
   flex-direction: column-reverse;
-  align-items: center;
-  // padding: 10px;
-}
-
-.project-info {
-  // margin: 15px;
 }
 
 .project-title {
@@ -333,18 +334,12 @@ canvas {
 /* media queries */
 
 @media (max-width: 1150px) {
-  img {
-    width: 350px;
-  }
   .project-image {
     width: 350px;
   }
 }
 
 @media (max-width: 1075px) {
-  img {
-    width: 300px;
-  }
   .project-image {
     width: 300px;
   }
@@ -366,13 +361,19 @@ canvas {
     flex-direction: column;
   }
   .section {
-    padding: 0 0 24px 0;
+    padding: 24px;
   }
 }
 
 @media (max-width: 875px) {
   header {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-group {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
 
@@ -405,9 +406,6 @@ canvas {
 }
 
 @media (max-width: 350px) {
-  img {
-    width: 200px;
-  }
   .project-image {
     width: 200px;
   }
