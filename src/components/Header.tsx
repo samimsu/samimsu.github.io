@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Header = () => {
   return (
     <div className="sticky top-0 z-40 w-full backdrop-blur flex-none transition-colors duration-500 lg:z-50 lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.06] bg-white/95 supports-backdrop-blur:bg-white/60 dark:bg-transparent">
@@ -14,28 +16,28 @@ const Header = () => {
               <nav className="text-sm leading-6 font-semibold text-slate-700 dark:text-slate-200">
                 <ul className="flex space-x-8">
                   <li>
-                    <a
+                    <Link
+                      to="/portfolio"
                       className="hover:text-sky-500 dark:hover:text-sky-400"
-                      href="/"
                     >
                       Portfolio
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
+                      to="/about"
                       className="hover:text-sky-500 dark:hover:text-sky-400"
-                      href="/"
                     >
                       About
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
+                      to="/contact"
                       className="hover:text-sky-500 dark:hover:text-sky-400"
-                      href="/"
                     >
                       Contact
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </nav>

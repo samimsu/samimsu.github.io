@@ -1,23 +1,21 @@
-import wreckingBallCrane from "./assets/wrecking-ball-crane.svg";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Portfolio from "./pages/Portfolio";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Page404 from "./pages/404";
 import "./App.css";
-import Header from "./components/Header";
 
 function App() {
   return (
-    <div className="flex flex-col h-full">
-      <Header />
-      <div className="flex flex-col justify-center items-center space-y-5 grow">
-        <img
-          src={wreckingBallCrane}
-          className="logo react"
-          alt="React logo"
-          width={200}
-        />
-        <h1 className="text-3xl font-medium flex text-[#f5939a]">
-          Under Construction
-        </h1>
-      </div>
-    </div>
+    <Routes>
+      <Route index element={<Home />} />
+      <Route path="/portfolio" element={<Portfolio />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
+
+      <Route path="*" element={<Page404 />} />
+    </Routes>
   );
 }
 
