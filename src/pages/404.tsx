@@ -5,12 +5,7 @@ const Page404 = () => {
   return (
     <RootLayout>
       <div className="flex flex-col justify-center items-center space-y-5 grow">
-        <img
-          src={detonator}
-          className="logo react"
-          alt="React logo"
-          width={200}
-        />
+        <img src={detonator} width={200} alt="detonator" />
         <h1 className="text-3xl font-medium flex text-[#f5939a]">
           Page Not Found
         </h1>
