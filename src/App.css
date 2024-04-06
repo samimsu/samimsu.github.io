@@ -1,6 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 #root {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
   text-align: center;
+}
+
+@layer utilities {
+  .underline-svg,
+  .underline-svg-dark {
+    content: "";
+    position: absolute;
+    bottom: -0.125rem;
+    left: -0.5rem;
+    right: -0.5rem;
+    height: 1.25rem;
+    background-size: cover;
+  }
+
+  .underline-svg {
+    background-image: url("./assets/underline.svg");
+  }
+
+  .underline-svg-dark {
+    background-image: url("./assets/underline-dark.svg");
+  }
 }
