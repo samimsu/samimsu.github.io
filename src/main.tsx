@@ -4,13 +4,16 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App.tsx";
 import { BannerProvider } from "./contexts/BannerContext.tsx";
 import "./index.css";
+import { ThemeProvider } from "./contexts/ThemeContext.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
-      <BannerProvider>
-        <App />
-      </BannerProvider>
+      <ThemeProvider>
+        <BannerProvider>
+          <App />
+        </BannerProvider>
+      </ThemeProvider>
     </BrowserRouter>
   </React.StrictMode>
 );
