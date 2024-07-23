@@ -1,7 +1,28 @@
 import { Link } from "react-router-dom";
 import ThemeToggleButton from "./ThemeToggleButton";
+import LinkedInIcon from "./LinkedInIcon";
+import GithubIcon from "./GithubIcon";
 
 const Header = () => {
+  const renderSocialIcon = ({
+    icon,
+    link,
+    className,
+  }: {
+    icon: JSX.Element;
+    link: string;
+    className: string;
+  }) => {
+    return (
+      <a
+        href={link}
+        className={`ml-6 flex items-center text-slate-400 ${className}`}
+      >
+        {icon}
+      </a>
+    );
+  };
+
   return (
     <div className="sticky top-0 z-40 w-full backdrop-blur flex-none lg:z-50 lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.06] bg-white/95 supports-backdrop-blur:bg-white/60 dark:bg-transparent">
       <div className="max-w-8xl mx-auto">
@@ -44,18 +65,18 @@ const Header = () => {
               </nav>
               <div className="flex items-center border-l border-slate-200 ml-6 pl-6 dark:border-slate-800">
                 <ThemeToggleButton />
-                <a
-                  href="https://linkedin.com/in/samimsu"
-                  className="ml-6 block text-slate-400 hover:text-[#0077b5] dark:hover:text-[#0077b5]"
-                >
-                  <i className="fab fa-linkedin fa-lg icon"></i>
-                </a>
-                <a
-                  href="https://github.com/samimsu"
-                  className="ml-6 block text-slate-400 hover:text-[#333] dark:hover:text-[#333]"
-                >
-                  <i className="fab fa-github fa-lg icon"></i>
-                </a>
+
+                {renderSocialIcon({
+                  icon: <LinkedInIcon className="fa-lg" />,
+                  link: "https://linkedin.com/in/samimsu",
+                  className: "hover:text-[#0077b5] dark:hover:text-[#0077b5]",
+                })}
+
+                {renderSocialIcon({
+                  icon: <GithubIcon className="fa-lg" />,
+                  link: "https://github.com/samimsu",
+                  className: "hover:text-[#333] dark:hover:text-[#333]",
+                })}
               </div>
             </div>
           </div>
