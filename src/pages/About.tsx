@@ -13,7 +13,6 @@ const About = () => {
               over 2 years of professional experience in software engineering, I
               specialise in front end development using React.
             </p>
-
             <p>
               I started off as a freelancer in 2019 building chatbots for
               clients online. I moved on to work for Letswork as a Frontend Web

@@ -6,19 +6,49 @@ import { TECHNOLOGIES } from "../constants";
 import Tooltip from "../components/Tooltip";
 import Heading2 from "../components/Heading2";
 import NewTabIcon from "../components/NewTabIcon";
+import experiences from "../data/experiences";
+import { ExperienceType } from "../types/types";
 
 const Portfolio = () => {
   const { isLightMode } = useThemeContext();
 
-  // const renderExperienceSection = () => {
-  //   return (
-  //     <div>
-  //       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-  //         <Heading2>Experience</Heading2>
-  //       </div>
-  //     </div>
-  //   );
-  // };
+  const renderExperienceSection = () => {
+    const renderExperience = ({
+      company,
+      location,
+      duration,
+      position,
+      type,
+      link,
+    }: ExperienceType) => {
+      return (
+        <div>
+          <div className="flex justify-between flex-col sm:flex-row">
+            <div className="text-md">
+              {link ? (
+                <a href={link} className="hover:underline">
+                  {company}
+                </a>
+              ) : (
+                <>{company}</>
+              )}
+              , {location} {type && <i>({type})</i>}
+            </div>
+            <div className="text-sm">{duration}</div>
+          </div>
+          <div className="font-medium text-lg">{position}</div>
+        </div>
+      );
+    };
+    return (
+      <div>
+        <Heading2>Relevant Experience</Heading2>
+        <div className="mx-auto max-w-xl mt-6 text-left space-y-3 primary-text-color">
+          {experiences.map((experience) => renderExperience(experience))}
+        </div>
+      </div>
+    );
+  };
 
   const renderProjectsSection = () => {
     return (
@@ -69,9 +99,6 @@ const Portfolio = () => {
                             }`}
                           />
                         </div>
-                        {/* <button className="px-4 py-2 font-semibold text-white bg-blue-500 rounded hover:bg-blue-700">
-                            Hover me
-                          </button> */}
                       </Tooltip>
                     </Fragment>
                   ))}
@@ -86,8 +113,8 @@ const Portfolio = () => {
 
   return (
     <RootLayout>
-      <div className="page-container">
-        {/* {renderExperienceSection()} */}
+      <div className="page-container space-y-16">
+        {renderExperienceSection()}
         {renderProjectsSection()}
       </div>
     </RootLayout>
