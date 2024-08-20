@@ -4,7 +4,7 @@ import Heading2 from "../components/Heading2";
 const About = () => {
   return (
     <RootLayout>
-      <div className="max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+      <div className="page-container">
         <div className="max-w-2xl mx-auto">
           <Heading2>About Me</Heading2>
           <div className="mt-6 space-y-4 text-left text-lg text-slate-700 dark:text-slate-400">
