@@ -14,6 +14,7 @@ const Portfolio = () => {
 
   const renderExperienceSection = () => {
     const renderExperience = ({
+      id,
       company,
       location,
       duration,
@@ -22,7 +23,7 @@ const Portfolio = () => {
       link,
     }: ExperienceType) => {
       return (
-        <div>
+        <div key={id}>
           <div className="flex justify-between flex-col sm:flex-row">
             <div className="text-md">
               {link ? (

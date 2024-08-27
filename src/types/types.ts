@@ -27,10 +27,17 @@ export type ProjectType = {
 };
 
 export type ExperienceType = {
+  id: number;
   company: string;
   location: string;
   duration: string;
   position: string;
   type?: string;
   link?: string;
+};
+
+export type NavItemType = {
+  id: number;
+  title: string;
+  link: string;
 };
