@@ -47,7 +47,11 @@ const Header = () => {
           <div className="relative flex items-center">
             <Link
               to="/"
-              className="mr-3 flex-none overflow-hidden md:w-auto text-sm leading-6 font-semibold text-slate-700 dark:text-slate-200 hover:text-sky-500 dark:hover:text-sky-400"
+              className={`mr-3 flex-none overflow-hidden md:w-auto text-sm leading-6 font-semibold ${
+                window.location.pathname === "/"
+                  ? "text-sky-500 dark:text-sky-400"
+                  : "text-slate-700 dark:text-slate-200"
+              }  hover:text-sky-500 dark:hover:text-sky-400`}
             >
               Home
             </Link>
@@ -60,7 +64,11 @@ const Header = () => {
                       <li key={item.id}>
                         <Link
                           to={item.link}
-                          className="hover:text-sky-500 dark:hover:text-sky-400"
+                          className={`${
+                            window.location.pathname === item.link
+                              ? "text-sky-500 dark:text-sky-400"
+                              : ""
+                          }hover:text-sky-500 dark:hover:text-sky-400`}
                         >
                           {item.title}
                         </Link>
