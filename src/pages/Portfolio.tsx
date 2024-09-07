@@ -114,7 +114,7 @@ const Portfolio = () => {
 
   return (
     <RootLayout>
-      <div className="page-container space-y-16">
+      <div className="page-container space-y-16 animate-slidein opacity-0 [--slidein-delay:300ms]">
         {renderExperienceSection()}
         {renderProjectsSection()}
       </div>

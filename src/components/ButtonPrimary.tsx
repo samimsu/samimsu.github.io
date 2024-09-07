@@ -1,4 +1,10 @@
-interface ButtonPrimaryProps {
+import { ButtonHTMLAttributes } from "react";
+
+interface ButtonPrimaryProps
+  extends React.DetailedHTMLProps<
+    ButtonHTMLAttributes<HTMLButtonElement>,
+    HTMLButtonElement
+  > {
   children?: React.ReactNode;
   className?: string;
 }
@@ -8,10 +14,15 @@ const ButtonPrimary = ({
   className = "",
   ...props
 }: ButtonPrimaryProps) => {
+  const backgroundColors =
+    "bg-sky-500 hover:bg-sky-600 dark:bg-sky-400 dark:hover:bg-sky-500 disabled:bg-sky-200 disabled:dark:bg-sky-300";
+  const textColors = "text-white dark:text-slate-900";
+  const ringStyles =
+    "focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800";
   return (
     <button
       {...props}
-      className={`w-fit text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 disabled:bg-blue-400 disabled:dark:bg-blue-500 disabled:cursor-not-allowed ${className}`}
+      className={`w-fit focus:outline-none font-medium rounded-full text-sm px-5 py-2.5 text-center disabled:cursor-not-allowed ${className} ${backgroundColors} ${textColors} ${ringStyles}`}
     >
       {children}
     </button>

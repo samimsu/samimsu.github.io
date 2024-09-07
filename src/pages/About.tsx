@@ -4,7 +4,7 @@ import Heading2 from "../components/Heading2";
 const About = () => {
   return (
     <RootLayout>
-      <div className="page-container">
+      <div className="page-container animate-slidein opacity-0 [--slidein-delay:300ms]">
         <div className="max-w-2xl mx-auto">
           <Heading2>About Me</Heading2>
           <div className="mt-6 space-y-4 text-left text-lg text-slate-700 dark:text-slate-400">

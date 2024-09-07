@@ -1,6 +1,7 @@
 import { useForm } from "@formspree/react";
 import { useEffect, useState } from "react";
 import Loading from "./Loading";
+import ButtonPrimary from "./ButtonPrimary";
 
 const Required = () => {
   return <span className="text-red-500">*</span>;
@@ -88,13 +89,9 @@ const ContactForm = ({ className = "" }: { className?: string }) => {
         ></textarea>
       </div>
       <div className="flex items-center space-x-2">
-        <button
-          type="submit"
-          disabled={state.submitting}
-          className="w-fit text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 disabled:bg-blue-400 disabled:dark:bg-blue-500 disabled:cursor-not-allowed"
-        >
+        <ButtonPrimary type="submit" disabled={state.submitting}>
           Submit
-        </button>
+        </ButtonPrimary>
         {state.submitting && <Loading />}
         {state.succeeded && (
           <div className="dark:text-slate-200 text-sm">
