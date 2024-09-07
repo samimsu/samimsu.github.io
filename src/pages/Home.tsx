@@ -19,7 +19,7 @@ const Home = () => {
               </div>
             </h1>
             <Link to="/portfolio">
-              <ButtonPrimary className="rounded-full !bg-sky-500 dark:!bg-sky-400  dark:!text-slate-900">
+              <ButtonPrimary className="!rounded-full !bg-sky-500 dark:!bg-sky-400  dark:!text-slate-900">
                 My Portfolio
               </ButtonPrimary>
             </Link>
