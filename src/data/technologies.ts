@@ -12,6 +12,11 @@ import mongoDBLightIcon from "../assets/technologies/mongodb-light.svg";
 import mongoDBDarkIcon from "../assets/technologies/mongodb-dark.svg";
 import expressIcon from "../assets/technologies/express.svg";
 import nodejsIcon from "../assets/technologies/nodejs.svg";
+import nextjsLightIcon from "../assets/technologies/nextjs-icon-light-background.svg";
+import nextjsDarkIcon from "../assets/technologies/nextjs-icon-dark-background.svg";
+import typescriptIcon from "../assets/technologies/typescript-icon.svg";
+import nestjsIcon from "../assets/technologies/nestjs.svg";
+import pythonIcon from "../assets/technologies/python.png";
 
 const technologies: TechnologiesType = {
   astro: {
@@ -67,6 +72,30 @@ const technologies: TechnologiesType = {
     name: TECHNOLOGIES.NODE_JS,
     imageSrc: { light: nodejsIcon, dark: nodejsIcon },
     imageAlt: "Node.js Icon",
+  },
+  nextjs: {
+    id: 10,
+    name: TECHNOLOGIES.NEXT_JS,
+    imageSrc: { light: nextjsLightIcon, dark: nextjsDarkIcon },
+    imageAlt: "Next.js Icon",
+  },
+  typescript: {
+    id: 11,
+    name: TECHNOLOGIES.TYPESCRIPT,
+    imageSrc: { light: typescriptIcon, dark: typescriptIcon },
+    imageAlt: "TypeScript Icon",
+  },
+  nestjs: {
+    id: 12,
+    name: TECHNOLOGIES.NEST_JS,
+    imageSrc: { light: nestjsIcon, dark: nestjsIcon },
+    imageAlt: "NestJS Icon",
+  },
+  python: {
+    id: 13,
+    name: TECHNOLOGIES.PYTHON,
+    imageSrc: { light: pythonIcon, dark: pythonIcon },
+    imageAlt: "Python Icon",
   },
 };
 

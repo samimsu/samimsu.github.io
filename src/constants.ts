@@ -13,6 +13,10 @@ const TECHNOLOGIES = {
   MONGO_DB: "MongoDB",
   EXPRESS: "Express",
   NODE_JS: "Node.js",
+  NEXT_JS: "Next.js",
+  TYPESCRIPT: "TypeScript",
+  NEST_JS: "NestJS",
+  PYTHON: "Python",
 } as const;
 
 export { THEMES, TECHNOLOGIES };

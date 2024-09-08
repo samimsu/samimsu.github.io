@@ -34,6 +34,7 @@ export type ExperienceType = {
   position: string;
   type?: string;
   link?: string;
+  technologies?: TechnologyType[];
 };
 
 export type NavItemType = {

@@ -21,6 +21,7 @@ const Portfolio = () => {
       position,
       type,
       link,
+      technologies,
     }: ExperienceType) => {
       return (
         <div key={id}>
@@ -37,14 +38,38 @@ const Portfolio = () => {
             </div>
             <div className="text-sm">{duration}</div>
           </div>
-          <div className="font-medium text-lg">{position}</div>
+          <div className="font-medium text-lg mb-1">{position}</div>
+          <div className="flex items-center space-x-1">
+            {technologies &&
+              technologies.length &&
+              technologies.map((technology) => (
+                <div key={technology.id} className="flex">
+                  <Tooltip content={technology.name}>
+                    <div className="flex items-center h-5">
+                      <img
+                        src={
+                          isLightMode
+                            ? technology.imageSrc.light
+                            : technology.imageSrc.dark
+                        }
+                        className={`object-contain w-full ${
+                          technology.name === TECHNOLOGIES.TAILWIND_CSS
+                            ? "h-4/6"
+                            : "h-full"
+                        }`}
+                      />
+                    </div>
+                  </Tooltip>
+                </div>
+              ))}
+          </div>
         </div>
       );
     };
     return (
       <div>
         <Heading2>Relevant Experience</Heading2>
-        <div className="mx-auto max-w-xl mt-6 text-left space-y-3 primary-text-color">
+        <div className="mx-auto max-w-xl mt-6 text-left space-y-4 primary-text-color">
           {experiences.map((experience) => renderExperience(experience))}
         </div>
       </div>
