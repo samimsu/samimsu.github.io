@@ -22,7 +22,16 @@ const About = () => {
             </p>
             <p>
               Apart from coding, I also enjoy journaling, playing football,
-              reading books and playing chess.
+              reading books and playing chess (
+              <a
+                href="https://www.chess.com/member/sami7em"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                challenge me
+              </a>
+              ).
             </p>
           </div>
         </div>
