@@ -2,57 +2,75 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicon/favicon-16x16.png"
-    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Sami" />
-    <meta
-      name="keywords"
-      content="Portfolio, Software Developer, Sami, Web Developer, Software Engineer, Frontend Developer, React Developer"
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
     />
-    <meta
-      name="description"
-      content="I'm a Web Developer primarily based in the UAE. This is my portfolio website that lists some projects I've worked on and the relevant experience I have."
-    />
-    <meta
-      property="og:image"
-      content="https://i.ibb.co/2gQMBNf/portfolio-site-screenshot.png"
-    />
-    <meta
-      property="og:description"
-      content="I'm a Web Developer primarily based in the UAE. This is my portfolio website that lists some projects I've worked on and the relevant experience I have."
-    />
-    <meta property="og:title" content="Sami | Web Developer" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Sami | Web Developer" />
-    <meta
-      name="twitter:description"
-      content="I'm a Web Developer primarily based in the UAE. This is my portfolio website that lists some projects I've worked on and the relevant experience I have."
-    />
-    <meta
-      name="twitter:image"
-      content="https://i.ibb.co/2gQMBNf/portfolio-site-screenshot.png"
-    />
-    <meta name="twitter:image:alt" content="Sami's portfolio website" />
-    <title>Sami | Web Developer</title>
+    <title>404 - Sami | Web Developer</title>
+    <style>
+      :root {
+        --bard-color-brand-text-gradient-stop-1: #4285f4;
+        --bard-color-brand-text-gradient-stop-2: #9b72cb;
+        --bard-color-brand-text-gradient-stop-3: #d96570;
+        --gem-sys-color--surface: #fff;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Poppins", sans-serif;
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 6rem;
+        /* background-color: red; */
+      }
+      h1 {
+        font-size: 3.75rem;
+        line-height: 1;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      button {
+        color: white;
+        background-color: rgb(14 165 233);
+        border: none;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+        border-radius: 9999px;
+        padding-top: 0.625rem;
+        padding-bottom: 0.625rem;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+      }
+      button:hover {
+        background-color: rgb(2 132 199);
+      }
+      .sub-text {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-bottom: 1.5rem;
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <div class="content">
+      <h1>404</h1>
+      <div class="sub-text">Sorry! The page could not be found</div>
+      <a href="https://samimsu.github.io">
+        <button>Back to home</button>
+      </a>
+    </div>
   </body>
 </html>
