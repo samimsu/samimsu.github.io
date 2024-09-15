@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import ButtonPrimary from "../components/ButtonPrimary";
+import ButtonSecondary from "../components/ButtonSecondary";
 import RootLayout from "../layouts/RootLayout";
 import samiImage from "../assets/sami.jpeg";
+import samiCV from "../assets/sami-cv.pdf";
 
 const Home = () => {
   return (
@@ -16,9 +18,14 @@ const Home = () => {
                 Web Developer
               </span>
             </h1>
-            <Link to="/portfolio">
-              <ButtonPrimary>My Portfolio</ButtonPrimary>
-            </Link>
+            <div className="flex space-x-2 justify-center">
+              <Link to="/portfolio">
+                <ButtonPrimary>Portfolio</ButtonPrimary>
+              </Link>
+              <a href={samiCV} target="_blank" rel="noopener noreferrer">
+                <ButtonSecondary>Resume</ButtonSecondary>
+              </a>
+            </div>
           </div>
 
           <div className="max-w-48 aspect-square">
