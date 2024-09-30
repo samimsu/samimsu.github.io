@@ -8,6 +8,7 @@ import Heading2 from "../components/Heading2";
 import NewTabIcon from "../components/NewTabIcon";
 import experiences from "../data/experiences";
 import { ExperienceType } from "../types/types";
+import CodeIcon from "../components/CodeIcon";
 
 const Portfolio = () => {
   const { isLightMode } = useThemeContext();
@@ -92,17 +93,36 @@ const Portfolio = () => {
                 />
               </div>
               <div className="mt-4 flex flex-col items-start space-y-1">
-                <h3 className="text-sm text-gray-700 dark:text-gray-400">
-                  <a
-                    href={project.href}
-                    className="flex items-center space-x-1"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <span className="font-medium">{project.name} </span>
-                    <NewTabIcon className="fa-sm" />
-                  </a>
-                </h3>
+                <div className="flex items-center justify-between w-full">
+                  <h3 className="text-sm text-gray-700 dark:text-gray-400">
+                    {project.href ? (
+                      <a
+                        href={project.href}
+                        className="flex items-center space-x-1"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <span className="font-medium">{project.name} </span>
+                        <NewTabIcon className="fa-sm" />
+                      </a>
+                    ) : (
+                      <span className="font-medium">{project.name} </span>
+                    )}
+                  </h3>
+                  {project.code && (
+                    <a
+                      href={project.code}
+                      className="flex items-center space-x-1"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <CodeIcon
+                        className="text-gray-700 dark:text-gray-400"
+                        size="20"
+                      />
+                    </a>
+                  )}
+                </div>
                 <p className="text-sm text-gray-500 dark:text-gray-200 pb-2 text-left">
                   {project.description}
                 </p>

@@ -19,11 +19,12 @@ export type TechnologiesType = {
 export type ProjectType = {
   id: number;
   name: string;
-  href: string;
+  href?: string;
   imageSrc: string;
   imageAlt: string;
   description: string;
   technologies: TechnologyType[];
+  code?: string;
 };
 
 export type ExperienceType = {

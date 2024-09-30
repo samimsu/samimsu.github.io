@@ -26,11 +26,11 @@ const projects: ProjectType[] = [
     imageAlt: "SimpleChat website screenshot",
     description: "A minimalistic web chat application",
     technologies: [technologies.react, technologies.firebase],
+    code: "https://github.com/samimsu/simplechat",
   },
   {
     id: 3,
     name: "Kanban Boards",
-    href: "https://github.com/samimsu/kanban-boards",
     imageSrc: kanbanBoardsImg,
     imageAlt: "Kanban Boards website screenshot",
     description: "A web app for convenient task management",
@@ -41,6 +41,7 @@ const projects: ProjectType[] = [
       technologies.express,
       technologies.nodejs,
     ],
+    code: "https://github.com/samimsu/kanban-boards",
   },
 ];
 
