@@ -1,4 +1,5 @@
 import { ExperienceType } from "../types/types";
+import { classadiaSite, letsworkSite } from "./links";
 import technologies from "./technologies";
 
 const experiences: ExperienceType[] = [
@@ -9,7 +10,7 @@ const experiences: ExperienceType[] = [
     duration: "Jan 2024 – Jul 2024",
     position: "Full Stack Web Developer",
     type: "contract",
-    link: "https://www.classadia.com/",
+    link: classadiaSite,
     technologies: [
       technologies.react,
       technologies.nestjs,
@@ -22,7 +23,7 @@ const experiences: ExperienceType[] = [
     location: "Dubai",
     duration: "Apr 2022 – Sep 2023",
     position: "Frontend Web Developer",
-    link: "https://letswork.io/",
+    link: letsworkSite,
     technologies: [
       technologies.react,
       technologies.nextjs,

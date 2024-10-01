@@ -1,5 +1,6 @@
 import RootLayout from "../layouts/RootLayout";
 import Heading2 from "../components/Heading2";
+import { myChessProfile } from "../data/links";
 
 const About = () => {
   return (
@@ -24,7 +25,7 @@ const About = () => {
               Apart from coding, I also enjoy journaling, playing football,
               reading books and playing chess (
               <a
-                href="https://www.chess.com/member/sami7em"
+                href={myChessProfile}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline"

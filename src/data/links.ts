@@ -1,0 +1,10 @@
+export const myLinkedinProfile = "https://linkedin.com/in/samimsu";
+export const myGithubProfile = "https://github.com/samimsu";
+export const myPorfolioRepo = myGithubProfile + "/samimsu.github.io";
+export const letsworkSite = "https://letswork.io/";
+export const classadiaSite = "https://www.classadia.com/";
+export const mjAlKhoorySite = "https://mjalkhoory.com/";
+export const simpleChatSite = "https://simplechat-demo.netlify.app/";
+export const simpleChatRepo = "https://github.com/samimsu/simplechat";
+export const kanbanBoardsRepo = "https://github.com/samimsu/kanban-boards";
+export const myChessProfile = "https://www.chess.com/member/sami7em";

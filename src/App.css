@@ -67,3 +67,33 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+@layer utilities {
+  .header-footer-container1 {
+    @apply w-full flex-none lg:border-slate-900/10 dark:border-slate-50/[0.06] backdrop-blur bg-white/60 dark:bg-transparent;
+  }
+
+  .header-footer-container2 {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .header-footer-container3 {
+    @apply py-4 border-slate-900/10 lg:px-8 dark:border-slate-300/10 mx-4 lg:mx-0;
+  }
+
+  .header-footer-container1.header-container1 {
+    @apply lg:border-b;
+  }
+
+  .header-footer-container1.footer-container1 {
+    @apply lg:border-t;
+  }
+
+  .header-footer-container3.header-container3 {
+    @apply sm:border-b lg:border-0;
+  }
+
+  .header-footer-container3.footer-container3 {
+    @apply sm:border-t lg:border-0;
+  }
+}

@@ -3,12 +3,18 @@ import technologies from "./technologies";
 import mjAlkhooryImg from "../assets/projects/mj-alkhoory.png";
 import simpleChatImg from "../assets/projects/simplechat.png";
 import kanbanBoardsImg from "../assets/projects/kanban-boards.webp";
+import {
+  kanbanBoardsRepo,
+  mjAlKhoorySite,
+  simpleChatRepo,
+  simpleChatSite,
+} from "./links";
 
 const projects: ProjectType[] = [
   {
     id: 1,
     name: "MJ Alkhoory Art",
-    href: "https://mjalkhoory.com/",
+    href: mjAlKhoorySite,
     imageSrc: mjAlkhooryImg,
     imageAlt: "MJ Alkhoory Art website screenshot",
     description: "An art portfolio website",
@@ -21,12 +27,12 @@ const projects: ProjectType[] = [
   {
     id: 2,
     name: "SimpleChat",
-    href: "https://simplechat-demo.netlify.app/",
+    href: simpleChatSite,
     imageSrc: simpleChatImg,
     imageAlt: "SimpleChat website screenshot",
     description: "A minimalistic web chat application",
     technologies: [technologies.react, technologies.firebase],
-    code: "https://github.com/samimsu/simplechat",
+    code: simpleChatRepo,
   },
   {
     id: 3,
@@ -41,7 +47,7 @@ const projects: ProjectType[] = [
       technologies.express,
       technologies.nodejs,
     ],
-    code: "https://github.com/samimsu/kanban-boards",
+    code: kanbanBoardsRepo,
   },
 ];
 

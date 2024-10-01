@@ -4,6 +4,7 @@ import navItems from "../data/navItems";
 import ThemeToggleButton from "./ThemeToggleButton";
 import LinkedInIcon from "./LinkedInIcon";
 import GithubIcon from "./GithubIcon";
+import { myGithubProfile, myLinkedinProfile } from "../data/links";
 
 const MenuIcon = ({ className = "" }) => {
   return (
@@ -41,9 +42,9 @@ const Header = () => {
   };
 
   return (
-    <div className="sticky top-0 z-40 w-full backdrop-blur flex-none lg:z-50 lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.06] bg-white/95 supports-backdrop-blur:bg-white/60 dark:bg-transparent">
-      <div className="max-w-8xl mx-auto">
-        <div className="py-4 sm:border-b border-slate-900/10 lg:px-8 lg:border-0 dark:border-slate-300/10 mx-4 lg:mx-0">
+    <div className="sticky top-0 z-40 lg:z-50 header-footer-container1 header-container1">
+      <div className="header-footer-container2">
+        <div className="header-footer-container3 header-container3">
           <div className="relative flex items-center">
             <Link
               to="/"
@@ -81,13 +82,13 @@ const Header = () => {
 
                 {renderSocialIcon({
                   icon: <LinkedInIcon className="fa-lg" />,
-                  link: "https://linkedin.com/in/samimsu",
+                  link: myLinkedinProfile,
                   className: "hover:text-[#0077b5] dark:hover:text-[#0077b5]",
                 })}
 
                 {renderSocialIcon({
                   icon: <GithubIcon className="fa-lg" />,
-                  link: "https://github.com/samimsu",
+                  link: myGithubProfile,
                   className: "hover:text-[#333] dark:hover:text-[#333]",
                 })}
               </div>

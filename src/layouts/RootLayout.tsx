@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -7,9 +8,10 @@ type LayoutProps = {
 
 const RootLayout = ({ children }: LayoutProps) => {
   return (
-    <div className="flex flex-col h-full bg-white dark:bg-slate-900">
+    <div className="flex flex-col h-full overflow-clip">
       <Header />
-      {children}
+      <div className="flex-1 min-h-[500px]">{children}</div>
+      <Footer />
     </div>
   );
 };
