@@ -31,7 +31,7 @@ const Home = () => {
           <div className="max-w-48 aspect-square">
             <img
               src={samiImage}
-              className="object-cover object-left w-full h-full rounded-full border-2 border-black dark:border-slate-100"
+              className="object-cover object-left w-full h-full rounded-full border-2 border-black dark:border-slate-100 min-w-48 min-h-48"
             />
           </div>
         </div>
