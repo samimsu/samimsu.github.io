@@ -20,7 +20,7 @@ const projects: ProjectType[] = [
     href: chatGPTScrollerSite,
     imageSrc: chatGPTScrollerImg,
     imageAlt: "ChatGPT Scroller screenshot",
-    description: "A Chrome extension for navigating ChatGPT coversations",
+    description: "A Chrome extension for navigating ChatGPT conversations",
     technologies: [technologies.javascript, technologies.webpack],
     code: chatGPTScrollerRepo,
   },
