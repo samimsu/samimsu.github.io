@@ -17,6 +17,8 @@ const TECHNOLOGIES = {
   TYPESCRIPT: "TypeScript",
   NEST_JS: "NestJS",
   PYTHON: "Python",
+  JAVASCRIPT: "JavaScript",
+  WEBPACK: "Webpack",
 } as const;
 
 export { THEMES, TECHNOLOGIES };

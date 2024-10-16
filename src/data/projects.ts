@@ -1,9 +1,12 @@
 import { ProjectType } from "../types/types";
 import technologies from "./technologies";
+import chatGPTScrollerImg from "../assets/projects/chatgpt-scroller.png";
 import mjAlkhooryImg from "../assets/projects/mj-alkhoory.png";
 import simpleChatImg from "../assets/projects/simplechat.png";
 import kanbanBoardsImg from "../assets/projects/kanban-boards.webp";
 import {
+  chatGPTScrollerRepo,
+  chatGPTScrollerSite,
   kanbanBoardsRepo,
   mjAlKhoorySite,
   simpleChatRepo,
@@ -13,6 +16,16 @@ import {
 const projects: ProjectType[] = [
   {
     id: 1,
+    name: "ChatGPT Scroller",
+    href: chatGPTScrollerSite,
+    imageSrc: chatGPTScrollerImg,
+    imageAlt: "ChatGPT Scroller screenshot",
+    description: "A Chrome extension for navigating ChatGPT coversations",
+    technologies: [technologies.javascript, technologies.webpack],
+    code: chatGPTScrollerRepo,
+  },
+  {
+    id: 2,
     name: "MJ Alkhoory Art",
     href: mjAlKhoorySite,
     imageSrc: mjAlkhooryImg,
@@ -25,7 +38,7 @@ const projects: ProjectType[] = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     name: "SimpleChat",
     href: simpleChatSite,
     imageSrc: simpleChatImg,
@@ -35,7 +48,7 @@ const projects: ProjectType[] = [
     code: simpleChatRepo,
   },
   {
-    id: 3,
+    id: 4,
     name: "Kanban Boards",
     imageSrc: kanbanBoardsImg,
     imageAlt: "Kanban Boards website screenshot",

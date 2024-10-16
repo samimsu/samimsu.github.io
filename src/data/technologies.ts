@@ -17,6 +17,8 @@ import nextjsDarkIcon from "../assets/technologies/nextjs-icon-dark-background.s
 import typescriptIcon from "../assets/technologies/typescript-icon.svg";
 import nestjsIcon from "../assets/technologies/nestjs.svg";
 import pythonIcon from "../assets/technologies/python.png";
+import javascriptIcon from "../assets/technologies/javascript.png";
+import webpackIcon from "../assets/technologies/webpack.svg";
 
 const technologies: TechnologiesType = {
   astro: {
@@ -96,6 +98,18 @@ const technologies: TechnologiesType = {
     name: TECHNOLOGIES.PYTHON,
     imageSrc: { light: pythonIcon, dark: pythonIcon },
     imageAlt: "Python Icon",
+  },
+  javascript: {
+    id: 14,
+    name: TECHNOLOGIES.JAVASCRIPT,
+    imageSrc: { light: javascriptIcon, dark: javascriptIcon },
+    imageAlt: "JavaScript Icon",
+  },
+  webpack: {
+    id: 15,
+    name: TECHNOLOGIES.WEBPACK,
+    imageSrc: { light: webpackIcon, dark: webpackIcon },
+    imageAlt: "Webpack Icon",
   },
 };
 

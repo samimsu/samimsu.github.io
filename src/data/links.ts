@@ -3,6 +3,10 @@ export const myGithubProfile = "https://github.com/samimsu";
 export const myPorfolioRepo = myGithubProfile + "/samimsu.github.io";
 export const letsworkSite = "https://letswork.io/";
 export const classadiaSite = "https://www.classadia.com/";
+export const chatGPTScrollerSite =
+  "https://chromewebstore.google.com/detail/chatgpt-scroller/pelmadpbepelidfneidllbkmepmdpckd";
+export const chatGPTScrollerRepo =
+  "https://github.com/samimsu/chatgpt-scroller";
 export const mjAlKhoorySite = "https://mjalkhoory.com/";
 export const simpleChatSite = "https://simplechat-demo.netlify.app/";
 export const simpleChatRepo = "https://github.com/samimsu/simplechat";
