@@ -1,5 +1,6 @@
 import { ProjectType } from "../types/types";
 import technologies from "./technologies";
+import queensGameImg from "../assets/projects/queens-game.png";
 import chatGPTScrollerImg from "../assets/projects/chatgpt-scroller.png";
 import mjAlkhooryImg from "../assets/projects/mj-alkhoory.png";
 import simpleChatImg from "../assets/projects/simplechat.png";
@@ -9,6 +10,8 @@ import {
   chatGPTScrollerSite,
   kanbanBoardsRepo,
   mjAlKhoorySite,
+  queensGameRepo,
+  queensGameSite,
   simpleChatRepo,
   simpleChatSite,
 } from "./links";
@@ -16,6 +19,16 @@ import {
 const projects: ProjectType[] = [
   {
     id: 1,
+    name: "Queens",
+    href: queensGameSite,
+    imageSrc: queensGameImg,
+    imageAlt: "Queens game screenshot",
+    description: "A clone of the Queens game by LinkedIn",
+    technologies: [technologies.react, technologies.tailwind],
+    code: queensGameRepo,
+  },
+  {
+    id: 2,
     name: "ChatGPT Scroller",
     href: chatGPTScrollerSite,
     imageSrc: chatGPTScrollerImg,
@@ -25,7 +38,7 @@ const projects: ProjectType[] = [
     code: chatGPTScrollerRepo,
   },
   {
-    id: 2,
+    id: 3,
     name: "MJ Alkhoory Art",
     href: mjAlKhoorySite,
     imageSrc: mjAlkhooryImg,
@@ -38,7 +51,7 @@ const projects: ProjectType[] = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     name: "SimpleChat",
     href: simpleChatSite,
     imageSrc: simpleChatImg,
@@ -48,7 +61,7 @@ const projects: ProjectType[] = [
     code: simpleChatRepo,
   },
   {
-    id: 4,
+    id: 5,
     name: "Kanban Boards",
     imageSrc: kanbanBoardsImg,
     imageAlt: "Kanban Boards website screenshot",

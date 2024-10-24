@@ -3,6 +3,8 @@ export const myGithubProfile = "https://github.com/samimsu";
 export const myPorfolioRepo = myGithubProfile + "/samimsu.github.io";
 export const letsworkSite = "https://letswork.io/";
 export const classadiaSite = "https://www.classadia.com/";
+export const queensGameSite = "https://queensgame.vercel.app";
+export const queensGameRepo = "https://github.com/samimsu/queens-game-linkedin";
 export const chatGPTScrollerSite =
   "https://chromewebstore.google.com/detail/chatgpt-scroller/pelmadpbepelidfneidllbkmepmdpckd";
 export const chatGPTScrollerRepo =
