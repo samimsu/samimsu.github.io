@@ -28,7 +28,7 @@ const ContactForm = ({ className = "" }: { className?: string }) => {
   return (
     <form
       onSubmit={handleSubmit}
-      className={`flex flex-col max-w-sm mx-auto text-left w-full ${className}`}
+      className={`flex flex-col max-w-md mx-auto text-left w-full ${className}`}
     >
       <div className="mb-5">
         <label
