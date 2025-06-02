@@ -1,6 +1,5 @@
 import RootLayout from "../layouts/RootLayout";
 import Heading2 from "../components/Heading2";
-import { myLinkedinProfile } from "../data/links";
 
 const About = () => {
   return (
