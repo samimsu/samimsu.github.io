@@ -17,8 +17,8 @@ const Contact = () => {
                 className="text-blue-500"
               >
                 mohammadsamimsu@gmail.com
-              </a>
-              .
+              </a>{" "}
+              for any inquiries or comments.
             </div>
           </div>
           <ContactForm />

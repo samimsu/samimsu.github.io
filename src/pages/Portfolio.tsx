@@ -6,76 +6,10 @@ import { TECHNOLOGIES } from "../constants";
 import Tooltip from "../components/Tooltip";
 import Heading2 from "../components/Heading2";
 import NewTabIcon from "../components/NewTabIcon";
-import experiences from "../data/experiences";
-import { ExperienceType } from "../types/types";
 import CodeIcon from "../components/CodeIcon";
 
 const Portfolio = () => {
   const { isLightMode } = useThemeContext();
-
-  const renderExperienceSection = () => {
-    const renderExperience = ({
-      id,
-      company,
-      location,
-      duration,
-      position,
-      type,
-      link,
-      technologies,
-    }: ExperienceType) => {
-      return (
-        <div key={id}>
-          <div className="flex justify-between flex-col sm:flex-row">
-            <div className="text-md">
-              {link ? (
-                <a href={link} className="hover:underline">
-                  {company}
-                </a>
-              ) : (
-                <>{company}</>
-              )}
-              , {location} {type && <i>({type})</i>}
-            </div>
-            <div className="text-sm">{duration}</div>
-          </div>
-          <div className="font-medium text-lg mb-1">{position}</div>
-          <div className="flex items-center space-x-1">
-            {technologies &&
-              technologies.length &&
-              technologies.map((technology) => (
-                <div key={technology.id} className="flex">
-                  <Tooltip content={technology.name}>
-                    <div className="flex items-center h-5">
-                      <img
-                        src={
-                          isLightMode
-                            ? technology.imageSrc.light
-                            : technology.imageSrc.dark
-                        }
-                        className={`object-contain w-full ${
-                          technology.name === TECHNOLOGIES.TAILWIND_CSS
-                            ? "h-4/6"
-                            : "h-full"
-                        }`}
-                      />
-                    </div>
-                  </Tooltip>
-                </div>
-              ))}
-          </div>
-        </div>
-      );
-    };
-    return (
-      <div>
-        <Heading2>Relevant Experience</Heading2>
-        <div className="mx-auto max-w-xl mt-6 text-left space-y-4 primary-text-color">
-          {experiences.map((experience) => renderExperience(experience))}
-        </div>
-      </div>
-    );
-  };
 
   const renderProjectsSection = () => {
     return (
@@ -160,7 +94,6 @@ const Portfolio = () => {
   return (
     <RootLayout>
       <div className="page-container space-y-16 animate-slidein opacity-0 [--slidein-delay:300ms]">
-        {renderExperienceSection()}
         {renderProjectsSection()}
       </div>
     </RootLayout>
