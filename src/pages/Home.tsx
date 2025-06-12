@@ -52,7 +52,7 @@ const ImageCycle = () => {
     const activeOuterRadius = 124; // Thicker outer radius for active segment
     const center = 124; // Center of SVG, adjusted for larger viewBox
 
-    return images.map((image, index) => {
+    return images.map((_, index) => {
       const startAngle = index * (segmentAngle + gapAngle) + gapAngle / 2;
       const endAngle = startAngle + segmentAngle;
       const startRad = (startAngle * Math.PI) / 180;
